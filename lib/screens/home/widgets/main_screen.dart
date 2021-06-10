@@ -49,7 +49,7 @@ class MainScreen extends StatelessWidget {
 
   List<Forecast> buildWeek(dynamic data) {
     List<Forecast> listWeek = [];
-    for (int index = 0; index < 7; index++) {
+    for (int index = 0; index < 6; index++) {
       listWeek.add(Forecast(
           weekDay: data[index]["weekday"],
           icon: findIcon(data[index]["condition"]),
